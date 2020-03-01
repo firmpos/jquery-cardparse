@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/jquery.cardparser.css">
+		<link rel="shortcut icon" href="favicon.png">
+		<title>jQuery Card Parser Demo</title>
+		<style media="screen">
+			html, body {
+				font-family: arial;
+				margin: 0 auto;
+				padding: 0;
+			}
+			.container {
+				border: 1px solid #efeaea;
+				background: #eeeeee2b;
+				padding: 20px 40px;
+				margin: 60px auto;
+			    max-width: 800px;
+			    width: 100%;
+			}
+			h3 {
+			    font-size: 23px;
+			    margin: 0;
+			}
+			p {
+				margin: 5px 0 30px;
+			    font-style: italic;
+				font-size: 15px;
+			}
+			.gxbtn {
+			    border: 1px solid #02bd3b;
+			    display: inline-block;
+			    background: #02bd3b;
+			    border-radius: 3px;
+			    padding: 11px 30px;
+			    line-height: 17px;
+			    font-size: 15px;
+			    margin: 0px 2px;
+			    cursor: pointer;
+			    color: #fff;
+			}
+			.gxbtn:hover {
+				background: #03ad37;
+			}
+			.gxbtn {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h3>Please Pay $10.00</h3>
+			<p>
+				Test Sale <br>
+				<div class="gxbtn process-card">
+					Pay Now
+				</div>
+			</p>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.do_timeout.js"></script>
+		<script src="js/jquery.cardparser.js"></script>
+		<script type="text/javascript">
+			/*
+			  	****** test transaction ******
+				The plugin accepts two config options (url & amt) you will want to
+				modify it to accomodate your requirements.
+
+				url - This is the endpoint you will submit the transaction to
+				amt - This is a string value representing the currency amount to process
+
+			*/
+			$(function(){
+				$(".process-card").off("click").on("click", function(){
+					$(document).cardparser({
+						"url" : "service/process/",
+						"amt" : "10.00"
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

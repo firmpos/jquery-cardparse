@@ -1,0 +1,123 @@
+.___cardparser {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.___cardparser {
+	background: #ffffffeb;
+	font-family: "arial";
+	text-align: center;
+	z-index: 100000;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+.___cardparser .__progress {
+    position: absolute;
+    overflow: hidden;
+	height: 5px;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.___cardparser .__progress_ {
+	background: #02bd3b;
+    position: absolute;
+	height: 6px;
+    width: 0%;
+    left: 0;
+    top: 0;
+}
+.___cardparser .__gxbtn {
+	border: 1px solid #D5D5D6;
+	display: inline-block;
+	background: #F6F7F8;
+	border-radius: 3px;
+	padding: 11px 30px;
+	line-height: 17px;
+	font-size: 15px;
+	margin: 0px 2px;
+	cursor: pointer;
+	color: #444;
+}
+.___cardparser .__gxbtn:hover {
+	background: #f1f1f1;
+}
+.___cardparser .__gxbtn {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.___cardparser .__cpmsg {
+	top: calc(50% - 123px);
+	position: absolute;
+	line-height: 32px;
+	font-size: 30px;
+	color: #424242;
+	right: 0;
+	left: 0;
+}
+.___cardparser .__cpmsg_ {
+	/* text-transform: uppercase; */
+	top: calc(50% - 149px);
+	position: absolute;
+	font-style: italic;
+	line-height: 17px;
+	font-size: 14px;
+	color: #096bc1;
+	right: 0;
+	left: 0;
+}
+.___cardparser .__gxbtn-container {
+	top: calc(50% - 74px);
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+.___cardparser .__processing_msg {
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+	top: calc(50% - 170px);
+	padding: 20px 0 110px;
+	background: #f3f1f163;
+	position: absolute;
+	line-height: 32px;
+	font-size: 30px;
+	color: #444;
+	right: 0;
+	left: 0;
+}
+.___cardparser .__processing_msg.approved {
+	color: #00a734;
+}
+.___cardparser .__processing_msg.declined {
+	color: #ef0000;
+}
+.___cardparser .___processing_msg {
+	text-transform: uppercase;
+	top: calc(50% - 110px);
+	position: absolute;
+	font-style: italic;
+	line-height: 17px;
+	font-size: 14px;
+	color: #1d1d1d;
+	right: 0;
+	left: 0;
+}
+.___cardparser .___gxbtn-container {
+	top: calc(50% - 71px);
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+.___cardparser .alert {
+	color: #e00000;
+}
